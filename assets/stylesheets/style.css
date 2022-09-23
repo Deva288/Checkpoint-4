@@ -525,7 +525,7 @@ header .para {
 	font-weight: 700;
 	background-color: rgb(88, 75, 72);
 	text-align: right;
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .red-card .cylindrical-box {
@@ -599,10 +599,6 @@ header .para {
 	left: 0;
 	right: 0;
 }
-.image-container:hover {
-	display: none;
-	z-index: -1;
-}
 
 .play-button {
 	color: white;
@@ -613,6 +609,7 @@ header .para {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	transform: translateX(-50%);
 }
 .about .more-info:hover .icon-box {
 	background-color: var(--primary);
@@ -663,6 +660,7 @@ header .para {
 
 .other-brands {
 	overflow: auto;
+	scrollbar-width: none;
 }
 .other-brands::-webkit-scrollbar {
 	display: none;
@@ -946,9 +944,9 @@ sup {
 	background-color: var(--primary);
 	text-align: center;
 }
-.color-grey-text{
-  color: rgb(209, 207, 207);
-  text-decoration: line-through;
+.color-grey-text {
+	color: rgb(209, 207, 207);
+	text-decoration: line-through;
 }
 /* faq */
 .fa-question-circle {
@@ -1141,9 +1139,9 @@ sup {
 
 /* responsive */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
 	.container {
-		max-width: 1140px;
+		max-width: 1040px;
 	}
 	.ms-width-100 {
 		min-width: 100%;
@@ -1196,22 +1194,25 @@ sup {
 		color: var(--primary);
 		z-index: 49;
 	}
-
+	.nav li a{
+		font-size: 3rem;
+		color: black;
+	}
 	.header .nav {
 		position: fixed;
 		right: 0;
-    left: 0;
+		left: 60%;
 		top: 6rem;
-		height: 100vh;
-		background-color: rgba(245, 231, 37, 0.918);
-		padding-top: 5rem;
-		border-bottom-left-radius: 1rem;
+		height: 65vh;
+		background-color: rgba(103, 180, 248, 0.89);
+		padding-top: 2rem;
+		border-bottom-left-radius: 1.5rem;
 	}
 
 	.header .nav li {
 		min-width: 100%;
 		text-align: center;
-		padding: 1rem;
+		padding: 1.5rem;
 		font-size: 1.5rem;
 		font-weight: 800;
 	}
